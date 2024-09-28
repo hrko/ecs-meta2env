@@ -39,6 +39,32 @@ ENTRYPOINT ["/usr/local/bin/ecs-meta2env", "<original-entrypoint...>"]
 * `X_ECS_CONTAINER_DOCKER_NAME`
 * `X_ECS_CONTAINER_ARN`
 
+## Development
+
+### Prerequisites
+
+* Go 1.23.1 or later
+* Task (taskfile.dev)
+* Dev Container (optional)
+
+### Building
+
+To build the project, run the following command:
+
+```sh
+task build
+```
+
+This will create the binaries in the `./bin` directory.
+
+### Testing
+
+To run the tests, run the following command:
+
+```sh
+go test
+```
+
 ## References
 
 * [Original Idea](https://github.com/aws/aws-for-fluent-bit/issues/62#issuecomment-925702432): The idea of inserting a shell script at the entry point is suggested here, but `ecs-meta2env` was created to achieve the same for containers with no shell or limited built-in commands, such as the *distroless* container.
