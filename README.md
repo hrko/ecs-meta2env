@@ -1,3 +1,7 @@
+This tool has been replaced by a re-implemented version in Rust.
+
+https://github.com/hrko/ecs-meta2env-rs
+
 # ecs-meta2env
 
 `ecs-meta2env` is a tool designed to export values from ECS container metadata endpoints to environment variables. This is particularly useful for passing ECS metadata to applications like Fluent Bit to add metadata to logs.
